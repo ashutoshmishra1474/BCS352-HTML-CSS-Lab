@@ -1,0 +1,53 @@
+<!--
+  Student Name: Ashutosh Mishra
+  Student ID: LBCS2026008
+  Roll Number: 2650303011
+  Subject Code: BCS352
+  Assignment Number: 15
+  Task Number: 01
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile-First Cards</title>
+  <style>
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      background-color: #f4f6f8;
+      border: 1px solid #1d3557;
+      padding: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    @media (min-width: 600px) {
+      .cards {
+        flex-direction: row;
+      }
+
+      .card {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Mobile-First Responsive Cards</h1>
+  <div class="cards">
+    <div class="card">
+      <h2>Card One</h2>
+      <p>On mobile screens below 600px, cards stack vertically in one column.</p>
+    </div>
+    <div class="card">
+      <h2>Card Two</h2>
+      <p>At 600px width and above, the media query arranges cards side by side.</p>
+    </div>
+  </div>
+</body>
+</html>

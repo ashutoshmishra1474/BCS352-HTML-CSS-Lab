@@ -1,0 +1,14 @@
+# Student Details
+| Student Name:- Ashutosh Mishra 
+| Student ID:-LBCS2026008 
+| University Roll Number:- 2650303011 
+| University:- Invertis University, Bareilly 
+| Course:- B.Tech Computer Science and Engineering (Second Year)
+| Subject Name:- HTML and CSS Introduction Lab
+| Subject Code:- BCS352
+| Academic Year:- 2026–2027
+| Submitted To:- Nitish Sir
+| GitHub Username:- ashutoshmishra1474
+| Intended GitHub Repository Name:- BCS352-HTML-CSS-Lab
+| Intended GitHub Repository URL:- https://github.com/ashutoshmishra1474/BCS352-HTML-CSS-Lab
+| Student Email:- ashutoshmishra1474@gmail.com 

@@ -1,0 +1,4 @@
+$ git push origin main
+To ../html-remote
+ * [new branch]      main -> main
+[exit code: 0]

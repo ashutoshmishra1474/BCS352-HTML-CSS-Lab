@@ -1,0 +1,25 @@
+/*
+  Student Name: Ashutosh Mishra
+  Student ID: LBCS2026008
+  Roll Number: 2650303011
+  Subject Code: BCS352
+  Assignment Number: 10
+  Task Number: 02
+*/
+
+h1 {
+  color: navy;
+}
+
+.note {
+  font-style: italic;
+}
+
+#title {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 18px;
+  color: grey;
+}

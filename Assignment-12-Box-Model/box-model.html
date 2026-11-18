@@ -1,0 +1,43 @@
+<!--
+  Student Name: Ashutosh Mishra
+  Student ID: LBCS2026008
+  Roll Number: 2650303011
+  Subject Code: BCS352
+  Assignment Number: 12
+  Task Number: 01
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model</title>
+  <style>
+    .box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid #1d3557;
+      background-color: #e9f1f7;
+      margin-bottom: 16px;
+    }
+
+    .content-box {
+      box-sizing: content-box;
+    }
+
+    .border-box {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Box Model Comparison</h1>
+  <div class="box content-box">
+    <strong>content-box</strong><br>
+    Width: 200px + 40px padding + 10px border = 250px total.
+  </div>
+  <div class="box border-box">
+    <strong>border-box</strong><br>
+    Total rendered width = 200px (includes padding and border).
+  </div>
+</body>
+</html>

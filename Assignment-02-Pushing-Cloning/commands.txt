@@ -1,0 +1,73 @@
+# Assignment 02 – Pushing and Cloning a Repository
+# Student Name: Ashutosh Mishra | Student ID: LBCS2026008 | Subject: BCS352 | Roll Number: 2650303011 | Assignment Number: 02
+# NOTE: Continue inside the separate `html-lab` practice folder created in Assignment 01.
+
+================================================================================
+TASK 1: Create bare repository, add origin remote, and check git remote -v
+================================================================================
+
+# Step 1: Create a bare repository one folder above html-lab
+git init --bare ../html-remote
+# Tip: If your Git defaults to 'master' while html-lab uses 'main', use:
+# git init --bare -b main ../html-remote
+# Expected Output:
+# Initialized empty Git repository in .../html-remote/
+
+# Step 2: Add the bare repository as remote named 'origin'
+git remote add origin ../html-remote
+
+# Step 3: Verify the configured remote URLs
+git remote -v
+# Expected Output:
+# origin  ../html-remote (fetch)
+# origin  ../html-remote (push)
+
+
+================================================================================
+TASK 2: Push commits to origin main (and master branch alternative)
+================================================================================
+
+# Step 1: Push the main branch commits to origin
+git push origin main
+# Expected Output:
+# Enumerating objects: 6, done.
+# Counting objects: 100% (6/6), done.
+# Delta compression using up to ... threads
+# Compressing objects: 100% (4/4), done.
+# Writing objects: 100% (6/6), ... bytes, done.
+# Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+# To ../html-remote
+#  * [new branch]      main -> main
+
+# Master Branch Alternative:
+# If `git branch` shows `master` instead of `main`, either:
+#   1) Push the master branch directly:
+#      git push origin master
+#   2) Or rename your local branch to main before pushing:
+#      git branch -M main
+#      git push origin main
+
+
+================================================================================
+TASK 3: Clone html-remote into html-copy and verify git log --oneline
+================================================================================
+
+# Step 1: Move one directory up (back to the parent folder containing html-lab and html-remote)
+cd ..
+
+# Step 2: Clone html-remote into a new folder named html-copy
+git clone html-remote html-copy
+# (Note: If html-remote was created without '-b main' and only has 'main',
+#  use `git clone -b main html-remote html-copy` if Git warns about HEAD.)
+# Expected Output:
+# Cloning into 'html-copy'...
+# done.
+
+# Step 3: Enter the cloned repository folder
+cd html-copy
+
+# Step 4: Check the commit history in the cloned repository
+git log --oneline
+# Expected Output:
+# <hash-2> Add next meeting heading
+# <hash-1> Add home page

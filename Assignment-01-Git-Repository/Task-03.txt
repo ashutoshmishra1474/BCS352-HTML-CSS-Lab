@@ -1,0 +1,11 @@
+$ git add index.html
+
+[exit code: 0]
+$ git commit -m "Add next meeting heading"
+[main fa25757] Add next meeting heading
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[exit code: 0]
+$ git log --oneline
+fa25757 Add next meeting heading
+36de473 Add home page
+[exit code: 0]

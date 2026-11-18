@@ -1,0 +1,15 @@
+$ git init -b main
+Initialized empty Git repository in /mnt/data/BCS352-audit/git-practice/html-lab/.git/
+[exit code: 0]
+$ git config --local user.name "Ashutosh Mishra"
+
+[exit code: 0]
+$ git config --local user.email "ashutoshmishra1474@gmail.com"
+
+[exit code: 0]
+$ git config --local user.name
+Ashutosh Mishra
+[exit code: 0]
+$ git config --local user.email
+ashutoshmishra1474@gmail.com
+[exit code: 0]

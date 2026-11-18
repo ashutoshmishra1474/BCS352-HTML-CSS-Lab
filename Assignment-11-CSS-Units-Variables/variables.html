@@ -1,0 +1,44 @@
+<!--
+  Student Name: Ashutosh Mishra
+  Student ID: LBCS2026008
+  Roll Number: 2650303011
+  Subject Code: BCS352
+  Assignment Number: 11
+  Task Number: 02
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Variables</title>
+  <style>
+    :root {
+      --main-color: #1d3557;
+      --accent-color: #e63946;
+      --page-padding: 20px;
+    }
+
+    body {
+      padding: var(--page-padding);
+      color: var(--main-color);
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: var(--main-color);
+      border-bottom: 3px solid var(--accent-color);
+      padding-bottom: 8px;
+    }
+
+    .accent-note {
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Using CSS Custom Properties</h1>
+  <p>The page padding and main text colour are controlled by CSS variables defined in <code>:root</code>.</p>
+  <p class="accent-note">This text uses <code>--accent-color</code> (#e63946).</p>
+</body>
+</html>

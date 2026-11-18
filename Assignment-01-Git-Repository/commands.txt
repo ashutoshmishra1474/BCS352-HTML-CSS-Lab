@@ -1,0 +1,95 @@
+# Assignment 01 – Starting a Git Repository
+# Student Name: Ashutosh Mishra | Student ID: LBCS2026008 | Subject: BCS352 | Roll Number: 2650303011 | Assignment Number: 01
+# NOTE: Run these commands in a separate practice directory (NOT inside BCS352-HTML-CSS-Lab)
+# so nested .git repositories do not cause conflicts.
+
+================================================================================
+TASK 1: Initialize repository and configure local user.name & user.email
+================================================================================
+
+# Step 1: Create the html-lab folder and enter it
+mkdir html-lab
+cd html-lab
+
+# Step 2: Initialize a new Git repository (using main as initial branch)
+git init -b main
+# Expected Output:
+# Initialized empty Git repository in .../html-lab/.git/
+# (Note: On older Git versions without -b main, run `git init` and then `git branch -M main`.)
+
+# Step 3: Configure local Git user name and email
+git config --local user.name "Ashutosh Mishra"
+git config --local user.email "ashutoshmishra1474@gmail.com"
+
+# Step 4: Display both configuration values
+git config --local user.name
+# Expected Output:
+# Ashutosh Mishra
+
+git config --local user.email
+# Expected Output:
+# ashutoshmishra1474@gmail.com
+
+
+================================================================================
+TASK 2: Create index.html, check git status, stage, and commit
+================================================================================
+
+# Step 1: Create index.html with an h1 heading
+# (You may create this file in VS Code or via terminal)
+# Contents of index.html:
+# <!DOCTYPE html>
+# <html lang="en">
+# <head>
+#   <meta charset="UTF-8">
+#   <title>HTML Lab</title>
+# </head>
+# <body>
+#   <h1>Welcome to HTML Lab</h1>
+# </body>
+# </html>
+
+# Step 2: Check repository status
+git status
+# Expected Output:
+# On branch main
+#
+# No commits yet
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#         index.html
+#
+# nothing added to commit but untracked files present (use "git add" to track)
+
+# Step 3: Stage index.html
+git add index.html
+
+# Step 4: Commit with the required message
+git commit -m "Add home page"
+# Expected Output:
+# [main (root-commit) <short-hash>] Add home page
+#  1 file changed, 10 insertions(+)
+#  create mode 100644 index.html
+
+
+================================================================================
+TASK 3: Add h2 heading, commit again, and check git log --oneline
+================================================================================
+
+# Step 1: Edit index.html and add an h2 heading inside <body>
+# Example addition inside <body>:
+#   <h2>Next Meeting: Monday at 10:00 AM</h2>
+
+# Step 2: Stage and commit the updated index.html
+git add index.html
+git commit -m "Add next meeting heading"
+# Expected Output:
+# [main <short-hash>] Add next meeting heading
+#  1 file changed, 1 insertion(+)
+
+# Step 3: Display compact commit history
+git log --oneline
+# Expected Output (commit hashes will vary):
+# <hash-2> Add next meeting heading
+# <hash-1> Add home page

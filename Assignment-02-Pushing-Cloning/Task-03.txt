@@ -1,0 +1,8 @@
+$ git clone -b main html-remote html-copy
+Cloning into 'html-copy'...
+done.
+[exit code: 0]
+$ git log --oneline
+fa25757 Add next meeting heading
+36de473 Add home page
+[exit code: 0]
